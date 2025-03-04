@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "FoFoFgF5ef0=",
+  "dgSpecHash": "IOk8P0X5wV4=",
   "success": true,
-  "projectFilePath": "C:\\Users\\META\\Desktop\\materials\\webdev\\projects\\BankingApp\\BankingApp.csproj",
+  "projectFilePath": "C:\\Users\\META\\Desktop\\materials\\webdev\\BankingApp\\BankingApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\META\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\META\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",

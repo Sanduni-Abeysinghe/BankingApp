@@ -1,0 +1,16 @@
+version: '3.4'
+
+services:
+  banking-api:
+    image: banking-system-api
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Production
+      - ConnectionStrings__Connection=Data Source=your_database_connection_string;
+      - Jwt__Issuer=Online JWT Builder
+      - Jwt__Key=YourSuperSecretLongKeyWithAtLeast32Chars
+      - Jwt__Audience=http://localhost:5291
+    ports:
+      - "8080:8080"

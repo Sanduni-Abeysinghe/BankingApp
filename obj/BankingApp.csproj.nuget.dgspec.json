@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\META\\Desktop\\materials\\webdev\\projects\\BankingApp\\BankingApp.csproj": {}
+    "C:\\Users\\META\\Desktop\\materials\\webdev\\BankingApp\\BankingApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\META\\Desktop\\materials\\webdev\\projects\\BankingApp\\BankingApp.csproj": {
+    "C:\\Users\\META\\Desktop\\materials\\webdev\\BankingApp\\BankingApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\META\\Desktop\\materials\\webdev\\projects\\BankingApp\\BankingApp.csproj",
+        "projectUniqueName": "C:\\Users\\META\\Desktop\\materials\\webdev\\BankingApp\\BankingApp.csproj",
         "projectName": "BankingApp",
-        "projectPath": "C:\\Users\\META\\Desktop\\materials\\webdev\\projects\\BankingApp\\BankingApp.csproj",
+        "projectPath": "C:\\Users\\META\\Desktop\\materials\\webdev\\BankingApp\\BankingApp.csproj",
         "packagesPath": "C:\\Users\\META\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\META\\Desktop\\materials\\webdev\\projects\\BankingApp\\obj\\",
+        "outputPath": "C:\\Users\\META\\Desktop\\materials\\webdev\\BankingApp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\META\\AppData\\Roaming\\NuGet\\NuGet.Config"
