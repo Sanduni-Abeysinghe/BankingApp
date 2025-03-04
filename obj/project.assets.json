@@ -13672,11 +13672,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\META\\Desktop\\materials\\webdev\\BankingApp\\BankingApp.csproj",
+      "projectUniqueName": "C:\\Users\\META\\Desktop\\materials\\webdev\\final\\BankingApp\\BankingApp.csproj",
       "projectName": "BankingApp",
-      "projectPath": "C:\\Users\\META\\Desktop\\materials\\webdev\\BankingApp\\BankingApp.csproj",
+      "projectPath": "C:\\Users\\META\\Desktop\\materials\\webdev\\final\\BankingApp\\BankingApp.csproj",
       "packagesPath": "C:\\Users\\META\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\META\\Desktop\\materials\\webdev\\BankingApp\\obj\\",
+      "outputPath": "C:\\Users\\META\\Desktop\\materials\\webdev\\final\\BankingApp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\META\\AppData\\Roaming\\NuGet\\NuGet.Config"

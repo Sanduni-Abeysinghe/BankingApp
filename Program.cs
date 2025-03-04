@@ -20,8 +20,8 @@ builder.Services.AddIdentity<IdentityUser, IdentityRole>()
     .AddEntityFrameworkStores<BankingDbContext>()
     .AddDefaultTokenProviders();
 
-// Registerin services and repositories
-builder.Services.AddScoped<IUserRepository,UserRepository>();
+// Registering services and repositories
+builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.AddScoped<IUserService, UserService>();
 
 builder.Services.AddScoped<RolesRepository>();
@@ -70,11 +70,9 @@ builder.Services.AddAuthentication(options =>
     {
         OnTokenValidated = context =>
         {
-            // You can access the HttpContext and User here if you need more details
             var logger = builder.Services.BuildServiceProvider().GetRequiredService<ILogger<Program>>();
             logger.LogInformation("JWT token validated successfully.");
-            
-            return Task.CompletedTask; // Ensure the task completes
+            return Task.CompletedTask;
         },
         OnAuthenticationFailed = context =>
         {
@@ -83,6 +81,12 @@ builder.Services.AddAuthentication(options =>
             return Task.CompletedTask;
         }
     };
+});
+
+// Configure Kestrel to listen on port 8080 and all interfaces
+builder.WebHost.ConfigureKestrel(serverOptions =>
+{
+    serverOptions.Listen(System.Net.IPAddress.Any, 8080); 
 });
 
 // Build the app
@@ -94,6 +98,9 @@ app.UseAuthorization();
 
 // Map controllers
 app.MapControllers();
+
+// for testing purposes
+app.MapGet("/", () => "Your API is up and running!");
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
