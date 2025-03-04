@@ -17,7 +17,7 @@ namespace BankingSystemAPI.Models
 
         public int AccountId { get; set; }
 
-        [ForeignKey("AccountId")]   
+        [ForeignKey("AccountId")]
         public BankAccount Account { get; set; }
     }
 }

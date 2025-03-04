@@ -4,9 +4,11 @@ using Microsoft.EntityFrameworkCore;
 
 namespace BankingSystemAPI.Repositories
 {
-    public class UserRepository
+    public class UserRepository  : IUserRepository
     {
         private readonly BankingDbContext _context;
+
+        public UserRepository() { }
 
         public UserRepository(BankingDbContext context)
         {

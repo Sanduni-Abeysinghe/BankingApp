@@ -34,6 +34,14 @@ namespace BankingSystemAPI.Services
             _logger = logger;
         }
 
+                public AccountService(
+            UserManager<IdentityUser> userManager,
+            SignInManager<IdentityUser> signInManager)
+        {
+            _userManager = userManager;
+            _signInManager = signInManager;
+        }
+
 public async Task<string> RegisterUserAsync(AuthModel model)
 {
     _logger.LogInformation("User registration attempt for email: {Email}", model.Email);
