@@ -4,7 +4,6 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace BankingSystemAPI.Models
 {
     public class BankAccount
-    //one-to-many relationship (one user can have many bank accounts)
     {
         [Key]
         public int Id { get; set; }
@@ -16,13 +15,12 @@ namespace BankingSystemAPI.Models
         public decimal Balance { get; set; }
 
         [Required]
-        public int UserId { get; set; }  
+        public int UserId { get; set; }
 
         [ForeignKey("UserId")]
         public User User { get; set; }
 
-        // One-to-many relationship with Transaction
-    public ICollection<Transaction> Transactions { get; set; }
+        public ICollection<Transaction> Transactions { get; set; }
     }
 }
 

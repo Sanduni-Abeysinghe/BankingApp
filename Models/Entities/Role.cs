@@ -11,7 +11,6 @@ namespace BankingSystemAPI.Models
         [Required]
         public string Name { get; set; }
 
-        // one-to-many relationship. One Role can have many Users
         public ICollection<User> Users { get; set; }
     }
 }

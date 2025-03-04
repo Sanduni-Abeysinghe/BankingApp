@@ -17,7 +17,3 @@ namespace BankingSystemAPI.Models
         public ICollection<BankAccount> Accounts { get; set; }
     }
 }
-
-// Defines a One-to-Many relationship with Account.
-// Id is the primary key.
-// Accounts → One branch can have multiple accounts.

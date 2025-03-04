@@ -5,13 +5,12 @@ using System.Text.Json.Serialization;
 
 namespace BankingSystemAPI.Models
 {
-    public class User 
+    public class User
     {
         public int UserId { get; set; }
         public string FullName { get; set; }
 
-[JsonIgnore]
-        //one-to-many relationship. one user can have many bank accounts
+        [JsonIgnore]
 
         public ICollection<BankAccount> BankAccounts { get; set; }
 
